@@ -1,0 +1,171 @@
+---
+layout: page
+title: Blog Hub
+permalink: /blog-hub/
+---
+
+<div class="blog-hub">
+  <header class="blog-hub__hero" id="home">
+    <p class="blog-hub__eyebrow">Welcome to</p>
+    <h1>Skyline Blog Hub</h1>
+    <p class="blog-hub__intro">A clean sky blue and white blog website with practical categories, featured stories, and smooth navigation.</p>
+  </header>
+
+  <nav class="blog-hub__menu" aria-label="Blog categories menu">
+    <a href="#cloud-hosting-development">Cloud Hosting &amp; Development</a>
+    <a href="#devops">DevOps</a>
+    <a href="#technology">Technology</a>
+    <a href="#mental-health">Mental Health</a>
+    <a href="#cars-bikes-maintenance">Cars &amp; Bikes Maintenance</a>
+    <a href="#health-grooming">Health &amp; Grooming</a>
+  </nav>
+
+  <section class="blog-hub__categories" aria-label="Category cards">
+    <article class="category-card" id="cloud-hosting-development">
+      <h2>Cloud Hosting &amp; Development</h2>
+      <p>Learn deployment patterns, scaling basics, backend architecture, and practical development workflows.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+
+    <article class="category-card" id="devops">
+      <h2>DevOps</h2>
+      <p>CI/CD, infrastructure as code, monitoring, and release strategies to keep teams fast and reliable.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+
+    <article class="category-card" id="technology">
+      <h2>Technology</h2>
+      <p>Latest ideas in software, AI, gadgets, and web trends explained in simple language.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+
+    <article class="category-card" id="mental-health">
+      <h2>Mental Health</h2>
+      <p>Balanced tips on productivity, stress management, emotional well-being, and sustainable routines.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+
+    <article class="category-card" id="cars-bikes-maintenance">
+      <h2>Cars &amp; Bikes Maintenance</h2>
+      <p>DIY checks, servicing plans, road safety reminders, and seasonal maintenance guides.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+
+    <article class="category-card" id="health-grooming">
+      <h2>Health &amp; Grooming</h2>
+      <p>Daily health habits, skincare basics, personal grooming routines, and lifestyle improvements.</p>
+      <a href="#category-directory">Explore this category</a>
+    </article>
+  </section>
+
+  <section class="blog-hub__directory" id="category-directory">
+    <h2>Category Directory</h2>
+    <p>Use the quick links below to jump to your area of interest.</p>
+    <ul>
+      <li><a href="#cloud-hosting-development">Cloud Hosting &amp; Development</a></li>
+      <li><a href="#devops">DevOps</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#mental-health">Mental Health</a></li>
+      <li><a href="#cars-bikes-maintenance">Cars &amp; Bikes Maintenance</a></li>
+      <li><a href="#health-grooming">Health &amp; Grooming</a></li>
+    </ul>
+  </section>
+</div>
+
+<style>
+  .blog-hub {
+    --sky: #1da1f2;
+    --sky-soft: #e9f7ff;
+    --text: #0a3550;
+    color: var(--text);
+  }
+
+  .blog-hub__hero {
+    background: linear-gradient(140deg, #ffffff 25%, #dff2ff 100%);
+    border: 1px solid #b6e3ff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-hub__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--sky);
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+
+  .blog-hub h1,
+  .blog-hub h2 {
+    color: #0077c8;
+  }
+
+  .blog-hub__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 1.2rem 0 1.8rem;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background: var(--sky-soft);
+    border: 1px solid #b6e3ff;
+  }
+
+  .blog-hub__menu a {
+    background: #ffffff;
+    color: #0f5f93;
+    border: 1px solid #9ed8ff;
+    border-radius: 999px;
+    padding: 0.45rem 0.9rem;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.2s ease;
+  }
+
+  .blog-hub__menu a:hover,
+  .blog-hub__menu a:focus {
+    background: var(--sky);
+    color: #ffffff;
+    border-color: var(--sky);
+  }
+
+  .blog-hub__categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .category-card {
+    background: #ffffff;
+    border: 1px solid #b6e3ff;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 4px 18px rgba(29, 161, 242, 0.08);
+  }
+
+  .category-card a {
+    display: inline-block;
+    margin-top: 0.4rem;
+    color: #087ec8;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .blog-hub__directory {
+    background: var(--sky-soft);
+    border: 1px solid #b6e3ff;
+    border-radius: 14px;
+    padding: 1.2rem;
+  }
+
+  .blog-hub__directory ul {
+    margin: 0.6rem 0 0;
+    padding-left: 1rem;
+  }
+
+  .blog-hub__directory a {
+    color: #0f5f93;
+  }
+</style>
