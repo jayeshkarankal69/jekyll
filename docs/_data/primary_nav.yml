@@ -13,3 +13,7 @@
 - title: News
   link: /news/
   show_on_mobile: true
+- title: Blog Hub
+  link: /blog-hub/
+  show_on_mobile: true
+
